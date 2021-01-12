@@ -5,9 +5,9 @@ import {
     Route,
     Redirect
   } from "react-router-dom";
-import {SearchScreen} from './components/SearchScreen';
-import {ResultsScreen} from './components/ResultsScreen';
-import {DetailsScreen} from './components/DetailsScreen';
+import {SearchScreen} from '../components/SearchScreen';
+import {ResultsScreen} from '../components/ResultsScreen';
+import {DetailsScreen} from '../components/DetailsScreen';
 
 
 
@@ -19,8 +19,8 @@ export const AppRouter = () => {
             <Switch>
                 <Route exact path='/' component={ SearchScreen } />
                 <Route exact path='/items?search=' component={ ResultsScreen} />
-                <Route exact path='/items/:id' component={ DetailsScreen } />
-                
+                <Route exact path='/items/:id' component={ DetailsScreen } /> 
+
 
                 <Redirect to='/' />
             </Switch>  
